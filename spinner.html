@@ -1,58 +1,37 @@
 <html>
 <head>  
    <style>
-        svg.spinner {
+         svg.spinner {
 
-          path {
-            animation: fadeIn 3.0s linear  infinite;  
-          }
+           path { 
+             animation: fadeIn 2.4s linear infinite;  
+             fill:#88bb00;
+           }
 
-            #p1 {
-             animation-delay: 0s;
-          }
-
-          #p2 {
-             animation-delay: .4s;
-          }
-
-        #p3 {
-             animation-delay: .8s;
-          }
-
-        }
-        #p4 {
-             animation-delay: 1.2s;
-          }
-        #p5 {
-             animation-delay: 1.6s;
-          }
-
-        @keyframes fadeIn  {
-            0% { 
-               opacity:0
-             } 50% {
-               opacity:1
-            } 75% {
-            opacity:1
-            } 100% {
-            opacity:1
-            }
-
-        }
+           #p1 { animation-delay: 0s; }
+           #p2 { animation-delay: .4s; }
+           #p3 { animation-delay: .8s; }
+           #p4 { animation-delay: 1.2s; }
+           #p5 { animation-delay: 1.6s; }
+         }
+         @keyframes fadeIn  {
+             0% { opacity:0.3 } 
+             25%, 100% { opacity:1 }
+         }
 
    </style>
  </head>
 
 <body>
   <p>
-    <svg class="spinner">
-      <path id="p1" xmlns="http://www.w3.org/2000/svg" d="M0,27.3672768 L10.3606755,13.3804608 L16.6668936,27.3672768 L0,27.3672768 Z" fill="#88bb00" />
+    <svg viewBox="0 0 60 55" width="300" height="250" class="spinner">
+        <path id="p1" xmlns="http://www.w3.org/2000/svg" d="M0,27.3672768 L10.3606755,13.3804608 L16.6668936,27.3672768 L0,27.3672768 Z" />
+        <path id="p2" xmlns="http://www.w3.org/2000/svg" d="M10.7433,12.9249984 L15.9397415,5.8360064 L18.584433,27.3739584 L10.7433,12.9249984 Z" />
+        <path id="p3" xmlns="http://www.w3.org/2000/svg" d="M20.2012468,0.0002784 L24.1498798,5.3075104 L20.2012468,27.3734944 L16.2793,5.2917344 L20.2012468,0.0002784 Z" />
+        <path id="p4" xmlns="http://www.w3.org/2000/svg" d="M21.9172596,27.3739584 L24.4956957,5.8035264 L29.7445894,12.8776704 L21.9172596,27.3739584 Z " />
+        <path id="p5" xmlns="http://www.w3.org/2000/svg" d=" M23.865166,27.3739584 L30.0756819,13.3453824 L40.4796074,27.3739584 L23.865166,27.3739584 Z" />
+      </svg>
 
-      <path id="p2" xmlns="http://www.w3.org/2000/svg" d="M10.7433,12.9249984 L15.9397415,5.8360064 L18.584433,27.3739584 L10.7433,12.9249984 Z" fill="#88BB00" />
-      <path id="p3" xmlns="http://www.w3.org/2000/svg" d="M20.2012468,0.0002784 L24.1498798,5.3075104 L20.2012468,27.3734944 L16.2793,5.2917344 L20.2012468,0.0002784 Z" fill="#88BB00" />
-      <path id="p4" xmlns="http://www.w3.org/2000/svg" d="M21.9172596,27.3739584 L24.4956957,5.8035264 L29.7445894,12.8776704 L21.9172596,27.3739584 Z " fill="#88BB00" />
-      <path id="p5" xmlns="http://www.w3.org/2000/svg" d=" M23.865166,27.3739584 L30.0756819,13.3453824 L40.4796074,27.3739584 L23.865166,27.3739584 Z" fill="#88bb00" />
-    </svg>
   </p>
 </body>
 </html>
